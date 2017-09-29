@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Our Home To Be</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <div class="container-fluid">
+
+    <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.png" width="60" height="60" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Начало <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Наеми</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Продажби</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Агенции</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Блог</a>
+            </li>
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+          <ul class="navbar-nav nav justify-content-end">
+            <li class="nav-item">
+              <button class="btn btn-outline-success my-2 my-sm-0"><i class="fa fa-plus-square-o fa-lg" aria-hidden="true"></i> Добави обява</button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" class="" href="#">Вход</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Wizard search Jumbotron -->
+      <div class="jumbotron jumbotron-fluid text-center">
+
+        <h1 class="display-4">Намери своя следващ дом!</h1>
+        <div class="row">
+          <div class="col-sm-4 ml-md-auto">
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+              <input type="text" class="form-control" placeholder="Търси в цяла България" aria-label="Bulgaria" aria-describedby="basic-addon1">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">София</a>
+                <a class="dropdown-item" href="#">Пловдив</a>
+                <a class="dropdown-item" href="#">Варна</a>
+                <div role="separator" class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Избери друг град</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-home" aria-hidden="true"></i></span>
+            <input type="text" class="form-control" placeholder="Всички типове" aria-label="Bulgaria" aria-describedby="basic-addon1">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">София</a>
+              <a class="dropdown-item" href="#">Пловдив</a>
+              <a class="dropdown-item" href="#">Варна</a>
+              <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Избери друг град</a>
+              </div>
+          </div>
+        </div>
+          <div class="col-sm-3 mr-auto">
+            <div class="input-group">
+              <span class="input-group-addon" id="basic-addon1"><i class="fa fa-eur" aria-hidden="true"></i></span>
+              <input type="text" class="form-control" placeholder="Всички цени" aria-label="Bulgaria" aria-describedby="basic-addon1">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">София</a>
+                <a class="dropdown-item" href="#">Пловдив</a>
+                <a class="dropdown-item" href="#">Варна</a>
+                <div role="separator" class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Избери друг град</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <br/>
+        <div>
+            <button class="btn btn-dark btn-lg"><i class="fa fa-search" aria-hidden="true"></i> Наем</button>
+            <button class="btn btn-dark btn-lg"><i class="fa fa-search" aria-hidden="true"></i> Продажби</button>
+        </div>
+        <br/>
+        <h6><a id="detailed-search" href="#">Подробно търсене <i class="fa fa-external-link" aria-hidden="true"></i></a></h6>
+      </div>  <!-- Wizard search Jumbotron -->
+
+      <!-- Top Offers section -->
+      <div id="top-offers">
+        <h2><strong>Топ обяви</strong></h2>
+
+        <div id="offers-list">
+          <div class="row">
+            <ul class="list">
+
+              <li>
+                <div class="col-sm-3">
+                  <div class="card" style="width: 20rem;">
+                    <!-- Carousel -->
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="./img/bedroom1.jpeg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="./img/bedroom2.jpeg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="./img/kitchen1.jpeg" alt="Third slide">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+
+
+                    <div class="card-body">
+                      <p><span>Продава </span> 2 стаен апартамент</p>
+                      <h4 class="card-title"><i class="fa fa-bell-o" aria-hidden="true"></i><b> 12 000 EUR </b> -500 кв.м.</h4>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a href="#">София, Хаджи Димитър</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+              <li>
+                <div class="col-sm-3">
+                  <div class="card" style="width: 20rem;">
+                    <!-- Carousel -->
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="./img/kitchen1.jpeg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="./img/bedroom2.jpeg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="./img/bedroom1.jpeg" alt="Third slide">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+
+
+                    <div class="card-body">
+                      <p><span>Продава </span> 2 стаен апартамент</p>
+                      <h4 class="card-title"><i class="fa fa-bell-o" aria-hidden="true"></i><b> 12 000 EUR </b> -500 кв.м.</h4>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a href="#">София, Хаджи Димитър</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+              <li>
+                <div class="col-sm-3">
+                  <div class="card" style="width: 20rem;">
+                    <!-- Carousel -->
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="./img/bedroom2.jpeg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="./img/bedroom1.jpeg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="./img/kitchen1.jpeg" alt="Third slide">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+
+
+                    <div class="card-body">
+                      <p><span>Продава </span> 2 стаен апартамент</p>
+                      <h4 class="card-title"><i class="fa fa-bell-o" aria-hidden="true"></i><b> 12 000 EUR </b> -500 кв.м.</h4>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                      <a href="#">София, Хаджи Димитър</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+          <button class="btn btn-light bg-light mx-auto">Покажи още 10 обяви  <i class="fa fa-external-link" aria-hidden="true"></i></button>
+        </div>
+      </div>
+
+      <!-- Blog post gallery  -->
+      <div id="blogposts">
+        <h2><strong>Новини</strong></h2>
+        <div id="posts-gallery">
+          <div class="row">
+            <div class="card-group">
+              <div class="col-sm-4 card">
+                <img class="card-img-top" src="./img/home2.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Tiny houses</h4>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card col-sm-4">
+                <img class="card-img-top" src="./img/home3.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card col-sm-4">
+                <img class="card-img-top" src="./img/home2.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-light bg-light mx-auto">Виж всички  <i class="fa fa-external-link" aria-hidden="true"></i></button>
+      </div>
+
+    </div>    <!-- class="container-fluid" -->
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>

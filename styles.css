@@ -1,0 +1,40 @@
+
+.jumbotron {
+  background: url('./img/home4.jpeg') no-repeat;
+  background-size: cover;
+  height: 450px;
+}
+.display-3 {
+    font-size: 3.5rem;
+    /*text-align: center;*/
+    color:  #101a23;
+}
+.btn-dark {
+  background-color: #396182;
+  border-color: #396182;
+  /*height: 50px;*/
+  color: #fff;
+  margin-right: 20px;
+}
+a#detailed-search {
+  color: #396182;
+  background-color: #ffffffb3;
+}
+.fa-bell-o {
+  color: #ffd753;
+}
+
+ul {
+  display: inherit;
+  list-style: none;
+}
+#top-offers {
+  height: 500px;
+  border-bottom: 1px solid grey;
+}
+.btn-light {
+  display: block;
+}
+.card-img-top {
+  height: 300px;
+}
