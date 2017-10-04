@@ -1,8 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.container-fluid {
+  padding: 5% 0;
+}
 .jumbotron {
   background: url('./img/home4.jpeg') no-repeat;
   background-size: cover;
   height: 450px;
+  margin-top: 10%;
 }
 .display-3 {
     font-size: 3.5rem;
@@ -14,7 +22,7 @@
   border-color: #396182;
   /*height: 50px;*/
   color: #fff;
-  margin-right: 20px;
+  margin-right: 2%;
 }
 a#detailed-search {
   color: #396182;

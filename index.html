@@ -13,9 +13,9 @@
     <div class="container-fluid">
 
     <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
         <a class="navbar-brand" href="#">
-          <img src="./img/logo.png" width="60" height="60" class="d-inline-block align-top" alt="">
+          <img src="./img/Logo_homeToBe.png" width="60" height="60" class="d-inline-block align-top" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -45,7 +45,7 @@
             </form> -->
           <ul class="navbar-nav nav justify-content-end">
             <li class="nav-item">
-              <button class="btn btn-outline-success my-2 my-sm-0"><i class="fa fa-plus-square-o fa-lg" aria-hidden="true"></i> Добави обява</button>
+              <button class="btn my-2 my-sm-0"><i class="fa fa-plus-square-o fa-lg" aria-hidden="true"></i> Добави обява</button>
             </li>
             <li class="nav-item">
               <a class="nav-link" class="" href="#">Вход</a>
@@ -53,18 +53,18 @@
           </ul>
         </div>
       </nav>
-
+      <hr class="my-4">
       <!-- Wizard search Jumbotron -->
       <div class="jumbotron jumbotron-fluid text-center">
 
-        <h1 class="display-4">Намери своя следващ дом!</h1>
+        <h1 class="h1">Твоят нов дом те очаква</h1>
         <div class="row">
-          <div class="col-sm-4 ml-md-auto">
+          <div class="col-sm-4 ml-auto">
             <div class="input-group">
               <span class="input-group-addon" id="basic-addon1"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
               <input type="text" class="form-control" placeholder="Търси в цяла България" aria-label="Bulgaria" aria-describedby="basic-addon1">
               <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-              <div class="dropdown-menu">
+              <div class="dropdown-menu dropdown-menu-right">
                 <a class="dropdown-item" href="#">София</a>
                 <a class="dropdown-item" href="#">Пловдив</a>
                 <a class="dropdown-item" href="#">Варна</a>
@@ -73,12 +73,12 @@
                 </div>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3 ">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1"><i class="fa fa-home" aria-hidden="true"></i></span>
             <input type="text" class="form-control" placeholder="Всички типове" aria-label="Bulgaria" aria-describedby="basic-addon1">
             <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu dropdown-menu-right">
               <a class="dropdown-item" href="#">София</a>
               <a class="dropdown-item" href="#">Пловдив</a>
               <a class="dropdown-item" href="#">Варна</a>
@@ -92,7 +92,7 @@
               <span class="input-group-addon" id="basic-addon1"><i class="fa fa-eur" aria-hidden="true"></i></span>
               <input type="text" class="form-control" placeholder="Всички цени" aria-label="Bulgaria" aria-describedby="basic-addon1">
               <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-              <div class="dropdown-menu">
+              <div class="dropdown-menu dropdown-menu-right">
                 <a class="dropdown-item" href="#">София</a>
                 <a class="dropdown-item" href="#">Пловдив</a>
                 <a class="dropdown-item" href="#">Варна</a>
@@ -104,8 +104,8 @@
         </div>
         <br/>
         <div>
-            <button class="btn btn-dark btn-lg"><i class="fa fa-search" aria-hidden="true"></i> Наем</button>
-            <button class="btn btn-dark btn-lg"><i class="fa fa-search" aria-hidden="true"></i> Продажби</button>
+            <button class="btn btn-dark"><i class="fa fa-search" aria-hidden="true"></i> Наем</button>
+            <button class="btn btn-dark"><i class="fa fa-search" aria-hidden="true"></i> Продажби</button>
         </div>
         <br/>
         <h6><a id="detailed-search" href="#">Подробно търсене <i class="fa fa-external-link" aria-hidden="true"></i></a></h6>
@@ -117,9 +117,6 @@
 
         <div id="offers-list">
           <div class="row">
-            <ul class="list">
-
-              <li>
                 <div class="col-sm-3">
                   <div class="card" style="width: 20rem;">
                     <!-- Carousel -->
@@ -154,10 +151,10 @@
                     </div>
                   </div>
                 </div>
-              </li>
 
 
-              <li>
+
+
                 <div class="col-sm-3">
                   <div class="card" style="width: 20rem;">
                     <!-- Carousel -->
@@ -192,10 +189,10 @@
                     </div>
                   </div>
                 </div>
-              </li>
 
 
-              <li>
+
+
                 <div class="col-sm-3">
                   <div class="card" style="width: 20rem;">
                     <!-- Carousel -->
@@ -230,15 +227,12 @@
                     </div>
                   </div>
                 </div>
-              </li>
-
-            </ul>
           </div>
 
-          <button class="btn btn-light bg-light mx-auto">Покажи още 10 обяви  <i class="fa fa-external-link" aria-hidden="true"></i></button>
+          <button class="btn btn-light bg-light mr-auto">Покажи още 10 обяви  <i class="fa fa-external-link" aria-hidden="true"></i></button>
         </div>
       </div>
-
+      <hr class="my-4">
       <!-- Blog post gallery  -->
       <div id="blogposts">
         <h2><strong>Новини</strong></h2>
@@ -273,9 +267,62 @@
           </div>
         </div>
 
-        <button class="btn btn-light bg-light mx-auto">Виж всички  <i class="fa fa-external-link" aria-hidden="true"></i></button>
+        <button class="btn btn-light bg-light mr-auto">Виж всички  <i class="fa fa-external-link" aria-hidden="true"></i></button>
       </div>
+      <hr class="my-4">
 
+
+      <nav class="nav nav-bar bg-light">
+        <div class="" >
+          <form class="form-inline">
+            <div class="form-group">
+              <h5 class="">Бъдете в течение с последните новини за имотния пазар в страната</h5>
+              <label for=""></label>
+              <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Въведете вашия email адрес">
+              <button class="btn btn-primary btn-dark">Абонирай се!</button>
+            </div>
+          </form>
+        </div>
+
+        <hr class="my-4">
+        <div id="footer-city-list">
+          <h6>Обяви за имоти по градове</h6>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Barcelona</a></li>
+            <li class="list-inline-item"><a href="#">Zagreb</a></li>
+            <li class="list-inline-item"><a href="#">Sofia</a></li>
+            <li class="list-inline-item"><a href="#">Paris</a></li>
+            <li class="list-inline-item"><a href="#">Barcelona</a></li>
+            <li class="list-inline-item"><a href="#">Madrid</a></li>
+            <li class="list-inline-item"><a href="#">Barcelona</a></li>
+            <li class="list-inline-item"><a href="#">Barcelona</a></li>
+            <li class="list-inline-item"><a href="#">NY</a></li>
+            <li class="list-inline-item"><a href="#">Barcelona</a></li>
+            <li class="list-inline-item"><a href="#">Barcelona</a></li>
+            <li class="list-inline-item"><a href="#">Tarragona</a></li>
+            <li class="list-inline-item"><a href="#">Los Angeles</a></li>
+            <li class="list-inline-item"><a href="#">Barcelona</a></li>
+            <li class="list-inline-item"><a href="#">Barcelona</a></li>
+            <li class="list-inline-item"><a href="#">Zagreb</a></li>
+            <li class="list-inline-item"><a href="#">Sofia</a></li>
+            <li class="list-inline-item"><a href="#">Paris</a></li>
+            <li class="list-inline-item"><a href="#">Barcelona</a></li>
+            <li class="list-inline-item"><a href="#">Madrid</a></li>
+            <li class="list-inline-item"><a href="#">Barcelona</a></li>
+            <li class="list-inline-item"><a href="#">Barcelona</a></li>
+            <li class="list-inline-item"><a href="#">NY</a></li>
+            <li class="list-inline-item"><a href="#">Barcelona</a></li>
+            <li class="list-inline-item"><a href="#">Barcelona</a></li>
+            <li class="list-inline-item"><a href="#">Tarragona</a></li>
+            <li class="list-inline-item"><a href="#">Los Angeles</a></li>
+            <li class="list-inline-item"><a href="#">London</a></li>
+            <li class="list-inline-item"><a href="#">Pamplona</a></li>
+            <li class="list-inline-item"><a href="#">Barcelona</a></li>
+            <li class="list-inline-item"><a href="#">Girona</a></li>
+          </ul>
+        </div>
+        <hr class="my-4">
+      </nav>
     </div>    <!-- class="container-fluid" -->
 
 
